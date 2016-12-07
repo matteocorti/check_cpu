@@ -20,7 +20,7 @@ use English qw(-no_match_vars);
 use File::Temp;
 use File::Copy;
 
-our $VERSION = '1.1.3';
+our $VERSION = '1.2.0';
 
 # Check which version of the monitoring plugins is available
 
@@ -248,26 +248,36 @@ sub read_stats {
             $line =~ s/^cpu\s+//mxs;
 
             (
-                $result{cpu_user}, $result{cpu_nice},   $result{cpu_system},
-                $result{cpu_idle}, $result{cpu_iowait}, $result{cpu_irq},
-	     $result{cpu_softirq}, $result{cpu_steal}, $result{cpu_guest}, $result{cpu_guest_nice},
+                $result{cpu_user},    $result{cpu_nice},
+                $result{cpu_system},  $result{cpu_idle},
+                $result{cpu_iowait},  $result{cpu_irq},
+                $result{cpu_softirq}, $result{cpu_steal},
+                $result{cpu_guest},   $result{cpu_guest_nice},
             ) = split m/\s/mxs, $line;
 
-	    # some of the fields where introduced at different times
-	    foreach my $field ('cpu_iowait', 'cpu_irq', 'cpu_softirq', 'cpu_steal', 'cpu_guest', 'cpu_guest_nice') {		
-		if ( ! defined $result{$field} ) {
-		    $result{$field} = 0;
-		}
-	    }
-	    
+            # some of the fields where introduced at different times
+            foreach my $field (
+                'cpu_iowait',  'cpu_irq',
+                'cpu_softirq', 'cpu_steal',
+                'cpu_guest',   'cpu_guest_nice'
+              )
+            {
+                if ( !defined $result{$field} ) {
+                    $result{$field} = 0;
+                }
+            }
+
             $result{cpu} =
               $result{cpu_user} +
               $result{cpu_nice} +
               $result{cpu_system} +
               $result{cpu_idle} +
               $result{cpu_iowait} +
-		$result{cpu_irq} +
-		$result{cpu_softirq} + $result{cpu_steal} + $result{cpu_guest} + $result{cpu_guest_nice};
+              $result{cpu_irq} +
+              $result{cpu_softirq} +
+              $result{cpu_steal} +
+              $result{cpu_guest} +
+              $result{cpu_guest_nice};
 
         }
         elsif ( $line =~ m/^intr\s+/mxs ) {

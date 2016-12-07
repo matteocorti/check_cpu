@@ -1,5 +1,5 @@
-%define version 1.1.3
-%define release 1
+%define version 1.2.0
+%define release 0
 %define sourcename       check_cpu
 %define packagename      nagios-plugins-check-cpu
 %define nagiospluginsdir %{_libdir}/nagios/plugins
@@ -16,8 +16,8 @@ License:       GPLv3+
 Packager:      Matteo Corti <matteo@corti.li>
 Group:         Applications/System
 BuildRoot:     %{_tmppath}/%{packagename}-%{version}-%{release}-root-%(%{__id_u} -n)
-URL:           https://trac.id.ethz.ch/projects/nagios_plugins/wiki/check_cpu
-Source:        https://trac.id.ethz.ch/projects/nagios_plugins/downloads/%{sourcename}-%{version}.tar.gz
+URL:           https://github.com/matteocorti/check_cpu
+Source:        https://github.com/matteocorti/check_cpu/releases/download/v%{version}/check_cpu-%{version}.tar.gz
 
 Requires: perl
 
@@ -51,6 +51,9 @@ rm -rf %{buildroot}
 %{_mandir}/man1/%{sourcename}.1*
 
 %changelog
+* Wed Dec  7 2015 Matteo Corti <matteo@corti.li> - 1.2.0-0
+- Upgrade to 1.2.0
+
 * Thu Aug 27 2015 Matteo Corti <matteo.corti@id.ethz.ch> - 1.1.3-1
 - Upgrade to 1.1.3
 

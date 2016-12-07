@@ -1,6 +1,10 @@
+2016-12-07  Matteo Corti  <matteo@corti.li>
+
+	* check_cpu: added support for the new /proc/stat fields
+
 2015-08-27  Matteo Corti  <matteo@corti.li>
 
-	* check_cpu (load_module): dynamic choice of the ::Plugin modules
+	* check_cpu: dynamic choice of the ::Plugin modules
 
 2010-04-09  Matteo Corti  <matteo.corti@id.ethz.ch>
 
