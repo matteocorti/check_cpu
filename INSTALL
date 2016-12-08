@@ -61,6 +61,7 @@ Generate the man page with pod2man
 
     pod2man check_cpu > CUSTOM_MAN_FILE
 
-Please report any installation problem to <matteo.corti@id.ethz.ch> or
-open a ticket at
-https://trac.id.ethz.ch/projects/nagios_plugins/newticket
+Support
+=======
+Please open a ticket at https://github.com/matteocorti/check_cpu/issues
+

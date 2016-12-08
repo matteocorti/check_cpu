@@ -7,4 +7,4 @@ usage:
   -v, --version                 version
 
 --------------------------------------------------------------------------------
-Please report bugs to: Matteo Corti <matteo.corti@id.ethz.ch>
+Please report bugs at https://github.com/matteocorti/check_cpu/issues

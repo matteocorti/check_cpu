@@ -97,17 +97,17 @@ Nagios documentation
 
 No bugs have been reported.
 
-Please report any bugs or feature requests to matteo.corti@id.ethz.ch,
-or through the web interface at
-https://svn.id.ethz.ch/trac/bd_webhosting/newticket
+Please report any bugs or feature requests through the web interface
+at https://github.com/matteocorti/check_cpu/issues
 
 =head1 AUTHOR
 
-Matteo Corti <matteo.corti@id.ethz.ch>
+Matteo Corti <matteo@corti.li>
 
 =head1 LICENSE AND COPYRIGHT
 
 Copyright (c) 2007, ETH Zurich.
+Copyright (c) 2008-2016, Matteo Corti.
 
 This module is free software; you can redistribute it and/or modify it
 under the terms of GNU general public license (gpl) version 3.

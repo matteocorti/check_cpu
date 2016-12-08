@@ -338,7 +338,7 @@ EOT
 $options = $plugin_getopt_module->new(
     usage   => $usage,
     version => $VERSION,
-    url     => 'https://trac.id.ethz.ch/projects/nagios_plugins',
+    url     => 'https://github.com/matteocorti/check_cpu',
     blurb   => 'Check CPU status',
 );
 
