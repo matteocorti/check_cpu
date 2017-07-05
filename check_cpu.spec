@@ -51,7 +51,7 @@ rm -rf %{buildroot}
 %{_mandir}/man1/%{sourcename}.1*
 
 %changelog
-* Wed Dec  7 2015 Matteo Corti <matteo@corti.li> - 1.2.0-0
+* Wed Dec  7 2016 Matteo Corti <matteo@corti.li> - 1.2.0-0
 - Upgrade to 1.2.0
 
 * Thu Aug 27 2015 Matteo Corti <matteo.corti@id.ethz.ch> - 1.1.3-1
