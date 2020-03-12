@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 7.24, CPAN::Meta::Converter version 2.150010'
+generated_by: 'Module::Install version 1.19, CPAN::Meta::Converter version 2.150010'
 license: open_source
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,7 +15,6 @@ meta-spec:
 name: check_cpu
 no_index:
   directory:
-    - t
     - inc
 requires:
   Carp: '0'
@@ -26,5 +25,7 @@ requires:
   Monitoring::Plugin: '0'
   Monitoring::Plugin::Threshold: '0'
   version: '0'
-version: v1.2.0
+resources:
+  license: http://opensource.org/licenses/gpl-license.php
+version: 1.2.0
 x_serialization_backend: 'CPAN::Meta::YAML version 0.018'
