@@ -155,7 +155,7 @@ sub write_timer_to_file {
 
 ##############################################################################
 # Usage     : get_proc_owner()
-# Purpose   : retrieve the user runnging the process
+# Purpose   : retrieve the user running the process
 # Returns   : username
 # Arguments : n/a
 # Throws    : n/a
