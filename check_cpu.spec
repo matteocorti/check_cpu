@@ -10,7 +10,7 @@
 Summary:   Nagios plugin to monitor the CPU usage on Linux systems
 Name:          %{packagename}
 Version:       %{version}
-Obsoletes:     check_cpu
+Obsoletes:     check_cpu <= 100
 Release:       %{release}%{?dist}
 License:       GPLv3+
 Packager:      Matteo Corti <matteo@corti.li>
@@ -63,7 +63,7 @@ rm -rf %{buildroot}
 * Thu Aug 27 2015 Matteo Corti <matteo@corti.li> - 1.1.1-1
 - Upgrade to 1.1.1
 
-* Fri Dec 18 2014 Matteo Corti <matteo@corti.li> - 1.1.0-0
+* Thu Dec 18 2014 Matteo Corti <matteo@corti.li> - 1.1.0-0
 - general spec update
 
 * Fri Mar 21 2008 Matteo Corti <matteo.corti@id.ethz.ch> - 1.0.3-0
