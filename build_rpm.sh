@@ -83,8 +83,8 @@ case ${DIST} in
 	    RELEASE='38'
         ;;
     fc39)
-        RPMDIR="${WEBROOT}/fedora/38/${ARCH}"
-        SRPMDIR="${WEBROOT}/fedora/38/SRPMS"
+        RPMDIR="${WEBROOT}/fedora/39/${ARCH}"
+        SRPMDIR="${WEBROOT}/fedora/39/SRPMS"
 	    DIST='fedora'
 	    RELEASE='39'
         ;;
